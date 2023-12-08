@@ -10,10 +10,11 @@ with tab1:
    code = '''
    import streamlit as st
 
-   code = '''def hello():
-       print("Hello, Streamlit!")'''
-   st.code(code, language='python')
-   '''
+   code = """
+   import streamlit as st
+
+   st.text('This is some text.')
+   """
    with col1:
       st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
    with col2:
