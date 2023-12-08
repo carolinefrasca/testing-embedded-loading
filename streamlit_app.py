@@ -18,12 +18,21 @@ with tab1:
    with col2:
       st.code(code)
 with tab2:
+   col1, col2 = st.columns(2)
+
    st.header("A dog")
    # st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
-   st.components.v1.html("""<iframe src="https://cross-chain-monitoring.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
-
+   with col1:
+      st.components.v1.html("""<iframe src="https://cross-chain-monitoring.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+   with col2:
+      st.code(code)
 
 with tab3:
+   col1, col2 = st.columns(2)
+
    st.header("An owl")
-   st.components.v1.html("""<iframe src="https://gptlab.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+   with col1:
+      st.components.v1.html("""<iframe src="https://gptlab.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+   with col2:
+      st.code(code)
    # st.image("https://static.streamlit.io/examples/owl.jpg", width=200)
