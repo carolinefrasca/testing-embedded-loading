@@ -2,6 +2,11 @@ import streamlit as st
 import streamlit.components.v1 as components
 
 tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
+code = """
+import streamlit as st
+
+st.text('This is some text.')
+"""
 
 with tab1:
    st.header("A cat")
@@ -10,11 +15,6 @@ with tab1:
    if show_code:
       col1, col2 = st.columns(2)
    
-      code = """
-      import streamlit as st
-   
-      st.text('This is some text.')
-      """
       with col1:
          st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
       with col2:
