@@ -7,8 +7,6 @@ with tab1:
    st.header("A cat")
    # st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
    col1, col2 = st.columns(2)
-   code = '''
-   import streamlit as st
 
    code = """
    import streamlit as st
