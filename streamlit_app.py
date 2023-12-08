@@ -6,8 +6,18 @@ tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
 with tab1:
    st.header("A cat")
    # st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
-   st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+   col1, col2 = st.columns(2)
+   code = '''
+   import streamlit as st
 
+   code = '''def hello():
+       print("Hello, Streamlit!")'''
+   st.code(code, language='python')
+   '''
+   with col1:
+      st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+   with col2:
+      st.code(code)
 with tab2:
    st.header("A dog")
    # st.image("https://static.streamlit.io/examples/dog.jpg", width=200)
