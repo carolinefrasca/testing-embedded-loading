@@ -1,6 +1,8 @@
 import streamlit as st
 import streamlit.components.v1 as components
 
+st.set_page_config(layout="wide")
+
 tab1, tab2, tab3 = st.tabs(["Option 1", "Option 2", "Option 3"])
 code = """
 import streamlit as st
