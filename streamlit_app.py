@@ -11,7 +11,6 @@ st.text('This is some text.')
 """
 
 with tab1:
-   st.header("A cat")
    # st.image("https://static.streamlit.io/examples/cat.jpg", width=200)
    show_code = st.checkbox("Show code")
    if show_code:
