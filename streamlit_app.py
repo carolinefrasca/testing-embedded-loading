@@ -18,11 +18,11 @@ with tab1:
       col1, col2 = st.columns(2)
    
       with col1:
-         st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=700 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+         st.components.v1.html("""<iframe src="https://echarts.streamlit.app/?embed=true" height=700 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
       with col2:
          st.code(code)
    else:
-      st.components.v1.html("""<iframe src="https://30days.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
+      st.components.v1.html("""<iframe src="https://echarts.streamlit.app/?embed=true" height=1200 style="width:100%;border:none;"></iframe>""", width=None, height=1200, scrolling=False)
 with tab2:
    col1, col2 = st.columns(2)
 
